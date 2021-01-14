@@ -2,21 +2,21 @@ package com.company;
 
 public class Animal {
 
-        public String name;
-        public int age;
-        public int weight;
+    private String name;
+    private int age;
+    private int weight;
 
-        public Animal(String name, int age, int weight) {
-            this.name = name;
-            this.age = age;
-            this.weight = weight;
-        }
+    //what is the point of the empty constructor
+    public Animal() {
+    }
 
-        //what is the point of the empty constructor? we can pass variables back and forth
-        public Animal() {
-        }
+    public Animal(String name, int age, int weight) {
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+    }
 
-        public void speak() {
+    public void speak() {
             System.out.println("HI!");
         }
 
@@ -52,4 +52,4 @@ public class Animal {
                 ", weight=" + weight +
                 '}';
     }
-}
+}//end Animal class
